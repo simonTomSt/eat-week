@@ -1,0 +1,14 @@
+@import "../../../scss/main.scss";
+.header {
+  height: 100px;
+  width: 100%;
+  background-color: transparent;
+  transition: $primary-transition;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  &.scrolled {
+    background-color: $primary-color;
+  }
+}
