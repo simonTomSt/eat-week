@@ -1,9 +1,13 @@
-import React from "react";
-import LoginPanel from "./LoginPanel/LoginPanel";
+import React from 'react';
+import TopBar from '../genericComponents/TopBar/TopBar';
+import AsideBar from '../genericComponents/AsideBar/AsideBar';
+import Interface from './Interface/Interface';
 const Dashboard = () => {
   return (
     <>
-      <LoginPanel />
+      <TopBar />
+      <AsideBar />
+      <Interface />
     </>
   );
 };

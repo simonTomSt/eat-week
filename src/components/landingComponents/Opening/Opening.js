@@ -1,13 +1,13 @@
-import React from "react";
-import "./Opening.scss";
-import { Link, animateScroll as scroll } from "react-scroll";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import { faMouse } from "@fortawesome/free-solid-svg-icons";
-import { Link as LinkBtn } from "react-router-dom";
+import React from 'react';
+import './Opening.scss';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { faMouse } from '@fortawesome/free-solid-svg-icons';
+import { Link as LinkBtn } from 'react-router-dom';
 const Header = () => {
   return (
-    <section className="opening">
+    <section className="opening" id="opening">
       <div className="opening__content">
         <h1 className="opening__header">
           Odkryj nowe smaki i zaplanuj swoją dietę!
@@ -26,8 +26,7 @@ const Header = () => {
         duration={1000}
         delay={200}
         isDynamic={true}
-        offset={-70}
-      >
+        offset={-70}>
         <div className="opening__scroll">
           <span className="opening__mouse">
             <FontAwesomeIcon icon={faMouse} />

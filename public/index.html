@@ -39,5 +39,31 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: 'AIzaSyC6BVCt7WhtRJhQx1eM_Grnv5qfST2eAu4',
+        authDomain: 'eatweek-5d374.firebaseapp.com',
+        databaseURL: 'https://eatweek-5d374.firebaseio.com',
+        projectId: 'eatweek-5d374',
+        storageBucket: 'eatweek-5d374.appspot.com',
+        messagingSenderId: '674221616518',
+        appId: '1:674221616518:web:61200f3fda53abe0b85007',
+        measurementId: 'G-NBLLCPMTZD',
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   </body>
 </html>

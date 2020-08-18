@@ -1,11 +1,11 @@
-import React from "react";
-import "./Navigation.scss";
-import { Link, animateScroll as scroll } from "react-scroll";
-import { Link as LinkBtn } from "react-router-dom";
+import React from 'react';
+import './Navigation.scss';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link as LinkBtn } from 'react-router-dom';
 const Navigation = () => {
   const settings = {
-    className: "nav__link",
-    activeClass: "active",
+    className: 'nav__link',
+    activeClass: 'active',
     spy: true,
     smooth: true,
     hashSpy: true,
@@ -28,9 +28,7 @@ const Navigation = () => {
             duration={settings.duration}
             delay={settings.delay}
             isDynamic={settings.isDynamic}
-            offset={settings.offset}
-          >
-            {" "}
+            offset={settings.offset}>
             O aplikacji
           </Link>
         </li>
@@ -45,8 +43,7 @@ const Navigation = () => {
             duration={settings.duration}
             delay={settings.delay}
             isDynamic={settings.isDynamic}
-            offset={settings.offset}
-          >
+            offset={settings.offset}>
             Funkcjonalności
           </Link>
         </li>
@@ -61,12 +58,11 @@ const Navigation = () => {
             duration={settings.duration}
             delay={settings.delay}
             isDynamic={settings.isDynamic}
-            offset={settings.offset}
-          >
+            offset={settings.offset}>
             Kontakt
           </Link>
         </li>
-        <LinkBtn to="/dashboard/loginPanel">
+        <LinkBtn to="/signin">
           <button className="primary-btn nav__btn">Aplikacja</button>
         </LinkBtn>
       </ul>
