@@ -15,41 +15,58 @@
 
   &__link {
     color: rgba(255, 255, 255, 0.76);
+    &:hover {
+      color: white;
+    }
   }
   &__btn {
     font-size: 1.2rem;
   }
-}
 
-.nav__item {
-  position: relative;
-  padding: 20px 0;
-  transition: $primary-transition;
-
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    background-color: $primary-color;
+  &__item {
+    position: relative;
+    padding: 20px 0;
     transition: $primary-transition;
-  }
-  &:hover::before {
-    width: 50%;
-  }
-  & .active {
-    color: white;
-    font-weight: 800;
-    &:before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 50%;
-      height: 3px;
-      background-color: $primary-color;
+    &.active {
+      color: red;
+      font-weight: 800;
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        height: 3px;
+        background-color: $primary-color;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0px;
+        height: 0px;
+
+        transition: $primary-transition;
+      }
+      &:hover::before {
+        width: 50%;
+        height: 3px;
+        background-color: $primary-color;
+      }
     }
   }
+}
+
+.nav.scrolled {
+  .nav__link {
+    color: $quaternary-color;
+    &:hover {
+      color: $tetriary-color;
+    }
+  }
+}
+
+.active {
+  color: red;
 }

@@ -22,6 +22,16 @@
     }
   }
   &.scrolled {
-    color: $quaternary-color;
+    .logo__icon {
+      font-size: 3rem;
+      color: $quaternary-color;
+    }
+    .logo__text {
+      font-size: 2rem;
+      span {
+        font-weight: 400;
+        color: $quaternary-color;
+      }
+    }
   }
 }

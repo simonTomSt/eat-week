@@ -1,5 +1,6 @@
 @import "../../../scss/main.scss";
 .header {
+  padding: 0;
   height: 100px;
   width: 100%;
   background-color: transparent;
@@ -10,5 +11,6 @@
   z-index: 100;
   &.scrolled {
     background-color: $primary-color;
+    height: 70px;
   }
 }

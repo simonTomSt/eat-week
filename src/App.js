@@ -1,11 +1,21 @@
 import React from "react";
-import Header from "./components/genericComponents/Header/Header";
-import Opening from "./components/landingComponents/Opening/Opening";
+import LandingPage from "./components/landingComponents/LandingPage";
+import Dashboard from "./components/dashboardComponents/Dashboard";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Opening />
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/">
+            <LandingPage />
+          </Route>
+          <Route>
+            <Dashboard path="/dashboard" />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
