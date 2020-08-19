@@ -9,7 +9,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  height: 320px;
+  height: 350px;
+
   &-img {
     width: 100%;
     border-radius: 10px;
@@ -17,5 +18,12 @@
   &-name {
     font-size: 1.2rem;
     font-weight: 600;
+  }
+  &-icon {
+    color: rgb(151, 151, 151);
+    cursor: pointer;
+    &:hover {
+      color: $tetriary-color;
+    }
   }
 }

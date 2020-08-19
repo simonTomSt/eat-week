@@ -6,22 +6,31 @@ import ReciepeExample from '../../genericComponents/RecipeExample/RecipeExample'
 const RecipesDatabase = () => {
   const [recipesData, setRecipesData] = useState(false);
   useEffect(() => {
-    const appKey = '9ed3dca3f1cf4a6c91fcd185d910fe63';
+    const API = {
+      url: 'https://api.spoonacular.com/recipes',
+      key: '9ed3dca3f1cf4a6c91fcd185d910fe63',
+      from: 0,
+      amount: 2,
+      query: 'dinner',
+    };
     axios
-      .get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${appKey}`)
+      .get(
+        `${API.url}/random?number=${API.amount}&tags=vegetarian/information&apiKey=${API.key}`
+      )
       .then((res) => {
         const respRecipes = res.data;
         setRecipesData(respRecipes);
       });
   }, []);
+
   return (
     <section className="examples">
       <ul className="examples__list">
         {recipesData === false ? (
           <Loading />
         ) : (
-          recipesData.results.map((result) => (
-            <ReciepeExample example={result} key={result.id} />
+          recipesData.recipes.map((recipe) => (
+            <ReciepeExample example={recipe} key={recipe.id} />
           ))
         )}
       </ul>

@@ -39,6 +39,7 @@
       color: white;
       &:focus {
         border-color: $tetriary-color;
+        background-color: transparent;
       }
     }
     button {
