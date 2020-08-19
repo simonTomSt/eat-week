@@ -1,0 +1,26 @@
+@import '../../../scss/main.scss';
+
+.left {
+  height: 100vh;
+  background-color: $quaternary-color;
+  width: 85px;
+  position: fixed;
+  &__menu {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40%;
+    max-height: 400px;
+  }
+  &__item {
+    font-size: 2.5rem;
+  }
+  &__link {
+    color: white;
+    &.active {
+      color: $primary-color;
+    }
+  }
+}

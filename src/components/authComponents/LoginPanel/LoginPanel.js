@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../authPanels.scss';
 import { Link } from 'react-router-dom';
 import useInput from '../../../hooks/useInput/useInput';
+
 const LoginPanel = () => {
   const [mail, setMail] = useInput('');
   const [password, setPassword] = useInput('');

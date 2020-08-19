@@ -1,0 +1,11 @@
+.examples {
+  padding: 0;
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1330px;
+    width: 100%;
+  }
+}

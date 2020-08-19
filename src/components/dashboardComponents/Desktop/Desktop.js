@@ -1,6 +1,6 @@
 import React from 'react';
 const Desktop = () => {
-  return <section className="desktop">dwdwdwdwdwd</section>;
+  return <section className="desktop"></section>;
 };
 
 export default Desktop;

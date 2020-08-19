@@ -6,8 +6,10 @@ const Dashboard = () => {
   return (
     <>
       <TopBar />
-      <AsideBar />
-      <Interface />
+      <div className="row" style={{ display: 'flex' }}>
+        <AsideBar />
+        <Interface />
+      </div>
     </>
   );
 };
