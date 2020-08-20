@@ -2,7 +2,7 @@
 
 .left {
   height: 100vh;
-  background-color: $quaternary-color;
+  background-color: rgb(24, 23, 23);
   width: 85px;
   position: fixed;
   &__menu {
@@ -20,7 +20,7 @@
   &__link {
     color: white;
     &.active {
-      color: $secondary-color;
+      color: $primary-color;
     }
   }
 }

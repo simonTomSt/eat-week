@@ -30,7 +30,7 @@ const LoginPanel = () => {
           />
           <Link className="panel__register-link" to="/dashboard/desktop">
             <button type="submit" className="primary-btn">
-              Zarejestruj się
+              Zaloguj się
             </button>
           </Link>
           <Link className="panel__register-link" to="/signup">

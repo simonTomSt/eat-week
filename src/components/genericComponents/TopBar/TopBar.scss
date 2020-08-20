@@ -3,12 +3,43 @@
 .top {
   position: fixed;
   height: 70px;
-  background-color: $primary-color;
+  background-color: $secondary-color;
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0 20px 0 5px;
   z-index: 100;
+  &__toggler {
+    background-color: transparent;
+    color: $quaternary-color;
+  }
+  &__settings {
+    position: absolute;
+    right: 1%;
+    width: 150px;
+    bottom: 0;
+    transform: translateY(100%);
+    background-color: $quaternary-color;
+    height: 150px;
+    &-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 100%;
+    }
+    &-item {
+      transition: $primary-transition;
+      color: rgba(255, 255, 255, 0.719);
+      cursor: pointer;
+      &:hover {
+        color: white;
+      }
+    }
+    &-btn {
+      background-color: $secondary-color;
+    }
+  }
   .logo {
     &__icon {
       color: $quaternary-color;

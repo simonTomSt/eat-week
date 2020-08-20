@@ -1,11 +1,11 @@
 import authReducer from './authReducer';
-import planReducer from './planReducer';
+import filterReducer from './filterReducer';
 
 import { combineReducers } from 'redux';
 
 const rootReducer = combineReducers({
   auth: authReducer,
-  plan: planReducer,
+  filter: filterReducer,
 });
 
 export default rootReducer;

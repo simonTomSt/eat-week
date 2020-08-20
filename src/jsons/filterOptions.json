@@ -1,0 +1,32 @@
+{
+  "dietsTypes": [
+    { "value": "default", "text": "Default" },
+    { "value": "ketogenic", "text": "Ketogenic" },
+    { "value": "vegetarian", "text": "Vegetarian" },
+    { "value": "lacto-vegetarian", "text": "Lacto-Vegetarian" },
+    { "value": "vegan", "text": "Vegan" },
+    { "value": "gluten-free", "text": "Gluten Free" },
+    { "value": "pescetarian", "text": "Pescetarian" },
+    { "value": "paleo", "text": "Paleo" },
+    { "value": "whole30", "text": "Whole30" },
+    { "value": "primal", "text": "Primal" }
+  ],
+  "intolerances": [
+    { "value": "dairy", "text": "Dairy" },
+    { "value": "gluten", "text": "Gluten" },
+    { "value": "seanut", "text": "Peanut" },
+    { "value": "seafood", "text": "Seafood" },
+    { "value": "egg", "text": "Egg" },
+    { "value": "primal", "text": "Primal" },
+    { "value": "graine", "text": "Grain" },
+    { "value": "sesame", "text": "Sesame" },
+    { "value": "soy", "text": "Soy" }
+  ],
+  "meals": [
+    { "value": "breakfast", "text": "Breakfast" },
+    { "value": "second-breakfast", "text": "Second breakfast" },
+    { "value": "main-corse", "text": "Main course" },
+    { "value": "dessert", "text": "Dessert" },
+    { "value": "supper", "text": "Supper" }
+  ]
+}
